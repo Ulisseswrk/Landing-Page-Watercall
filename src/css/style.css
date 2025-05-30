@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor-texto: rgb(255, 255, 255);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #ffffff;
+}
+
+header{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem;
+    background-color:#4a7a42;
+    transition: 1s;
+}
+
+header:hover{
+    background-color:#2B4028;
+}
+
+header img{
+    width: 5rem;
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 70rem;
+}
+
+li a{
+    font-family: Poppins, sans-serif;
+    color: var(--cor-texto);
+    font-size: 1.15rem;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+li a:hover{
+    
+}
+
+.foto1{
+    width: 120rem;
+    opacity: 0.5;
+}
+
+h1{
+    font-family: poppins;
+    font-size: 3rem;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+}
+
+main{
+    background-color: black;
+    height: 24rem;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.card{
+    font-family: Poppins;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    font-size: large;
+    margin-top: 1rem;
+    color: #ffffff;
+    display: flex;
+    background-color: #4a7a42;
+    justify-content: space-around;
+    padding: 100px;
+    transition: 1s;
+}
+
+.card:hover{
+    background-color: #2B4028;
+    cursor: pointer;
+}
+
+h1:hover{
+    cursor: pointer;
+}
