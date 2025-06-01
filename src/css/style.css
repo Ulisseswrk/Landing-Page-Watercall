@@ -17,10 +17,10 @@ header{
     z-index: 2;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0.1rem;
-    background-color:#4a7a42;
+    background-color:#fbfbfb;
     transition: 1s;
 }
 
@@ -29,9 +29,19 @@ header:hover{
 }
 
 header img{
-    width: 5rem;
-    margin-top: 0.2rem;
-    margin-left: 1rem;
+    margin-right: 4rem;
+    height: 2rem;
+}
+
+nav{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem;
+    background-color:#000000;
+    transition: 1s;
 }
 
 nav ul{
@@ -44,7 +54,7 @@ nav ul{
 li a{
     font-family: Poppins, sans-serif;
     color: var(--cor-texto);
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -53,8 +63,14 @@ li a:hover{
     
 }
 
+nav img{
+    width: 5rem;
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+}
+
 .foto1{
-    width: 120rem;
+    width: 100%;
     opacity: 0.5;
 }
 
@@ -69,7 +85,7 @@ h1{
 
 main{
     background-color: black;
-    height: 24rem;
+    height: 30rem;
 }
 
 .container{
@@ -84,18 +100,18 @@ main{
     text-align: center;
     position: relative;
     align-items: center;
-    font-size: large;
+    font-size: 2rem;
     margin-top: 1rem;
     color: #ffffff;
     display: flex;
-    background-color: #4a7a42;
+    background-color: #000000;
     justify-content: space-around;
     padding: 100px;
     transition: 1s;
 }
 
 .card:hover{
-    background-color: #2B4028;
+    background-color: #212121;
     cursor: pointer;
 }
 
