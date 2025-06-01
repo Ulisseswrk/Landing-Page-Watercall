@@ -2,9 +2,11 @@
 
 :root{
     --cor-texto: rgb(255, 255, 255);
-    --cor-fundo1: rgb(8, 9, 17);
-    --cor-div-icones: rgb(18, 22, 106);
-    --cor-cards: rgb(26, 19, 83);
+    --cor-texto-hover: #979DA6;
+    --cor-fundo1: #051326; /* rgb(8, 9, 17) */
+    --cor-div-icones: #061F40;
+    --cor-cards: #062540;
+    --cor-hover: #061F40;
 }
 
 *{
@@ -13,7 +15,7 @@
     box-sizing: border-box;
 }
 html{
-    background-color: #ffffff;
+    background-color: #979DA6;
 }
 
 header{
@@ -23,12 +25,8 @@ header{
     justify-content: center;
     align-items: center;
     padding: 0.1rem;
-    background-color:#fbfbfb;
+    background-color:#f1eeee;
     transition: 1s;
-}
-
-header:hover{
-    background-color:#2B4028;
 }
 
 header img{
@@ -63,7 +61,7 @@ li a{
 }
 
 li a:hover{
-    
+    color:var(--cor-texto-hover) ;
 }
 
 nav img{
@@ -88,8 +86,57 @@ h1{
 
 main{
     background-color: black;
-    height: 30rem;
+    height: 50rem;
 }
+
+.main-info{
+    position: relative;
+    display: inline-block;
+}
+
+.chamada-acao{
+    position: absolute;
+    top: 25%;
+    left: 19.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.chamada-acao h1{
+    color: #f1eeee;
+    font-size: 7rem;
+    align-content: center;
+}
+
+.chamada-acao button{
+    background-color: #0c1d8c;
+    font-size: 2.5vw;
+    color: #f1eeee;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+.chamada-acao button:hover{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: var(--cor-hover);
+}
+
+@media (max-width: 1px) {
+  .chamada-acao {
+    display: none;
+  }
+
+  .chamada-acao button {
+    font-size: 4vw;
+  }
+}
+
 
 .txts-icones{
     margin-top: -0.3rem;
@@ -98,39 +145,48 @@ main{
     background-color: var(--cor-div-icones);
     color: rgb(255, 255, 255);
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     height: 15rem;
+    
 }
 
 .icone{
-  font-family: Urbanist, sans-serif;
-  display: flex;
-  flex-direction: column; /* empilha os textos verticalmente */
-  align-items: center; /* centraliza horizontalmente */
-  padding: 16px;
-  border-radius: 8px;
-  width: 30%; /* divide em 3 partes */
-  text-align: center;
-  gap: 1rem;
+    flex-direction: column; /* empilha os textos verticalmente */
+    align-items: center; /* centraliza horizontalmente */
+    padding: 16px;
+    border-radius: 8px;
+    width: 30%; /* divide em 3 partes */
+    text-align: center;
+}
+
+.icone:hover{
+    color: var(--cor-hover);
 }
 
 .icone h4{
-    letter-spacing: 0.1rem;
-    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* ou 500 */
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
 }
 
 .icone h5{
-    font-weight: thin;
-    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300; /* ou 500 */
+    color: #ffffff;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
 }
 
 .icone img{
-    width: 60px; /* ajuste o tamanho da imagem */
+    width: 70px; /* ajuste o tamanho da imagem */
     height: auto;
     margin-bottom: 10px; /* espaço entre imagem e texto */
 }
-
 
 .container{
     display: flex;
@@ -140,21 +196,22 @@ main{
 }
 
 .card{
+    position: ;
     font-family: Poppins;
     text-align: center;
     align-items: center;
     font-size: 2rem;
     margin-top: 1rem;
-    color: #ffffff;
+    color: var(--cor-texto);
     display: flex;
     background-color: var(--cor-cards);
-    justify-content: space-around;
     padding: 100px;
     transition: 1s;
 }
 
 .card:hover{
-    background-color: #212121;
+    background-color: var(--cor-fundo1);
+    color: white;
     cursor: pointer;
 }
 
