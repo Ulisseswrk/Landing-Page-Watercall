@@ -2,6 +2,9 @@
 
 :root{
     --cor-texto: rgb(255, 255, 255);
+    --cor-fundo1: rgb(8, 9, 17);
+    --cor-div-icones: rgb(18, 22, 106);
+    --cor-cards: rgb(26, 19, 83);
 }
 
 *{
@@ -40,7 +43,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0.1rem;
-    background-color:#000000;
+    background-color:var(--cor-fundo1);
     transition: 1s;
 }
 
@@ -88,6 +91,47 @@ main{
     height: 30rem;
 }
 
+.txts-icones{
+    margin-top: -0.3rem;
+    font-family: Poppins;
+    font-size: 1rem;
+    background-color: var(--cor-div-icones);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15rem;
+}
+
+.icone{
+  font-family: Urbanist, sans-serif;
+  display: flex;
+  flex-direction: column; /* empilha os textos verticalmente */
+  align-items: center; /* centraliza horizontalmente */
+  padding: 16px;
+  border-radius: 8px;
+  width: 30%; /* divide em 3 partes */
+  text-align: center;
+  gap: 1rem;
+}
+
+.icone h4{
+    letter-spacing: 0.1rem;
+    font-size: 22px;
+}
+
+.icone h5{
+    font-weight: thin;
+    font-size: 14px;
+}
+
+.icone img{
+    width: 60px; /* ajuste o tamanho da imagem */
+    height: auto;
+    margin-bottom: 10px; /* espaço entre imagem e texto */
+}
+
+
 .container{
     display: flex;
     gap: 10px;
@@ -98,13 +142,12 @@ main{
 .card{
     font-family: Poppins;
     text-align: center;
-    position: relative;
     align-items: center;
     font-size: 2rem;
     margin-top: 1rem;
     color: #ffffff;
     display: flex;
-    background-color: #000000;
+    background-color: var(--cor-cards);
     justify-content: space-around;
     padding: 100px;
     transition: 1s;
@@ -130,3 +173,4 @@ h1:hover{
 .option-azul, .option-azul:hover{
     background-color: rgb(34, 0, 255);
 }
+
