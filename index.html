@@ -14,15 +14,16 @@
         <img class = "barra" src="src/img/barra-vertical.png" alt="Barra vertical">
         <img src="src/img/inpe.png" alt="logo INPE">
     </header>
+
         <nav>
             <a href="index.html"><img src="src/img/logo.png" alt="Logo"></a>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="#secao3">Tecnologias</a></li>
-                <li><a href="">Objetivos</a></li>
-                <li><a href="#colaboradores">Patrocinadores</a></li>
-                <li><a href="">Beneficios</a></li>
-                <li><a href="">Resultados</a></li>
+                <li><a class="link-ancora" href="#chamada-acao">Home</a></li>
+                <li><a class="link-ancora" href="#txts-icones">Beneficios</a></li>
+                <li><a class="link-ancora" href="#secao3">Tecnologias</a></li>
+                <li><a class="link-ancora" href="#captacao">Solução</a></li>
+                <li><a class="link-ancora" href="#colaboradores">Colaboradores</a></li>
+                
 
                 <select name="cores" id="cores">
                     <option class = "option-preto" value="preto"></option>
@@ -33,21 +34,21 @@
         </nav>
     <main>
 
-        <div class="main-info">
-            <img class= "foto1" src="src/img/background-home.jpg" alt="">
+        <section class="main-info">
+            <img class= "foto1" src="src/img/background-home.jpg" alt="imagem de enchente">
 
             <div class="chamada-acao">
                 <h1>Watercall Solutions</h1>
-                <button>Saiba mais</button>
+                <a href="#captacao"><button>Comece agora</button></a>
             </div>
-        </div>
+        </section>
         
 
-        <div class="txts-icones">
+        <section class="txts-icones" id="txts-icones">
             <div class="icone">
                 <img src="src/img/icone-aviso.png" alt="icone aviso">
                 <h4>SEJA AVISADO</h4>
-                <h5>Busque informações</h5>
+                <h5>Sobre as enchentes</h5>
             </div>
             
             <div class="icone">
@@ -63,9 +64,9 @@
                 <h5>Suporte humanizado</h5>
             </div>
 
-        </div>
+        </section>
 
-        <div class="container">
+        <section class="container">
             
             <div class="card">
                 <h4>Esta cansado de ficar com receio de enchentes?</h4>
@@ -79,10 +80,20 @@
             <div class="card">
                 <h4>Quer saber se tem risco de enchentes a chuva de hoje?</h4>
             </div>
+        </section>
+
+        <div class="captacao" id="captacao">
+            <h1>Digite os (mm) de chuva das ultimas 24H</h1>
+            
+            <input class = "input-mm" type="text" placeholder="Digite aqui...">
         </div>
 
-        <div class="secao3" id="secao3">
-            <div class="paragrafo">
+        <div class="colaboradores" id="colaboradores"><h3>Colaboradores:</h3></div>
+        <div class="parceiros" id="parceiros"></div>
+        <div class="rodape-parceiros"></div>
+
+        <sectiom class="secao3" id="secao3">
+            <div class="paragrafo" id="paragrafo">
                 <img src="src/img/tela.jpg" alt="tela de notebook">
                 <p>Utilizamos um sistema de análise de dados de chuvas em (mm) e classificação de risco para a previsão de enchentes</p>
             </div>
@@ -90,17 +101,11 @@
                 <img src="src/img/enchente.jpg" alt="foto de enchente">
                 <p>Com base nos mm de chuva, verificamos a probabilidade de eventuais complicações devido as fortes chuvas</p>
             </div>
-        </div>
-
-        <div class="colaboradores" id="colaboradores"><h3>Colaboradores:</h3></div>
-        <div class="parceiros" id="parceiros"></div>
-        <div class="rodape-parceiros"></div>
-        
-        <img class= "foto1" src="src/img/background-home.jpg" alt=""><img class= "foto1" src="src/img/background-home.jpg" alt="">
+        </section>
     </main>
-    <footer class="footer">
-        
-    </footer>
+
+    
+
 </body>
 <script src="src/js/app.js"></script>
 </html>
