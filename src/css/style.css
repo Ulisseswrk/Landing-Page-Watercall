@@ -80,10 +80,6 @@ nav img{
     margin-left: 1rem;
 }
 
-.foto1{
-    width: 100%;
-}
-
 h1{
     font-family: poppins;
     font-size: 3rem;
@@ -93,8 +89,16 @@ h1{
     color: #000000;
 }
 
-.carrousel{
+.carousel{
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
 
+.carousel img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .txts-icones{
