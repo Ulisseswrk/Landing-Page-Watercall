@@ -50,3 +50,53 @@ const imagens = ["src/img/carousel/foto1.png", "src/img/carousel/foto2.png", "sr
   }
 
   setInterval(trocarImagem, 4000); // troca a cada 4 segundos
+
+// --------------------------------------------------------------------------------
+
+var input = document.querySelector('.input-mm');
+  var btn = document.getElementById('btnVerificar');
+  var resultado = document.getElementById('resultadoRisco');
+  var captacaoDiv = document.getElementById('captacao');
+  var titulo = document.getElementById('titulo');
+
+  btn.onclick = function() {
+    var valor = parseFloat(input.value);
+
+    if (isNaN(valor) || valor < 0) {
+      resultado.textContent = 'Por favor, insira um número válido e maior ou igual a zero.';
+      resultado.style.color = 'white';
+      return;
+    }
+
+    if (valor <= 20) {
+      resultado.textContent = 'Chuva normal (nível seguro).';
+      resultado.style.color = 'white';
+      captacaoDiv.style.backgroundColor = 'green'
+      titulo.style.color = 'white';
+    } else if (valor <= 50) {
+      resultado.textContent = 'Chuva intensa (atenção).';
+      captacaoDiv.style.backgroundColor = '#fff3cd';
+      resultado.style.backgroundColor = '#fff3cd';
+      resultado.style.color = '#856404';
+      titulo.style.color = 'black';
+    } else if (valor <= 100) {
+      resultado.textContent = 'Chuva perigosa (risco potencial de enchentes).';
+      resultado.style.color = 'black'
+      captacaoDiv.style.backgroundColor = 'yellow';
+      resultado.style.backgroundColor = 'yellow';
+      titulo.style.color = 'black';
+    } else if (valor <= 200) {
+      resultado.textContent = 'Enchente provável (medidas preventivas imediatas).';
+      captacaoDiv.style.backgroundColor = '#f8d7da';
+      resultado.style.backgroundColor = '#f8d7da';
+      resultado.style.color = '#721c24';
+      titulo.style.color = 'black';
+    } else {
+      resultado.textContent = 'Chuva absurda, Emergência total (alto risco de desastres). Busque ajuda imediata!';
+      captacaoDiv.style.backgroundColor = '#721c24';
+      resultado.style.backgroundColor = '#721c24';
+      resultado.style.color = '#f8d7da';
+      titulo.style.color = 'white';
+    }
+  };
+

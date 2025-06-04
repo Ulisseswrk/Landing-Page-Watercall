@@ -295,6 +295,22 @@ h1:hover{
     font-size: 3rem;
 }
 
+.captacao button{
+    font-family: Poppins;
+    font-size: 1.5rem;
+    width: 10rem;
+    height: 3rem;
+    background-color: var(--cor-fundo1);
+    color: var(--cor-texto-especial);
+    animation: pulso 1.5s infinite;
+}
+
+#resultadoRisco{
+    font-family: Poppins;
+    font-size: 1.6rem;
+    
+}
+
 #chamada-acao,
 #txts-icones,
 #colaboradores{
