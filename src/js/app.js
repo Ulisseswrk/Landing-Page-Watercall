@@ -1,17 +1,7 @@
-var seletor = document.getElementById("cores");
+var seletor = document.getElementById("escolheCor");
 
 seletor.addEventListener("change", function() {
-  var valorSelecionado = seletor.value;
-
-// Transforma as cores que a priori estão em portguês pro inglês
-  var coresConvertidas = {
-    azul: "blue",
-    vermelho: "red",
-    preto: "black"
-  };
-
-// Pega a cor que o usuário escolheu e puxa dos dicionarios (Sou acostumado com python, por isso dict) e imediatamente os converte
-  var corCSS = coresConvertidas[valorSelecionado];
+  var corSelecionada = seletor.value; // Valor vem em formato hexadecimal
 
 // Define os elementos do css como variáveis pra facilitar la embaixo na hora da atribuição de cores diferentes
   var nav = document.querySelector("nav");
@@ -28,23 +18,23 @@ seletor.addEventListener("change", function() {
 
 
 // Aplicamos as cores de fundo para os elementos em questão
-  nav.style.backgroundColor = corCSS;
-  footer.style.backgroundColor = corCSS;
-  txtIcones.style.backgroundColor = corCSS;
-  secao3.style.backgroundColor = ""; // não muda fundo da seção inteira
-  colaboradores.style.backgroundColor = corCSS;
-  rodapeColaboradores.style.backgroundColor = corCSS;
-  header.style.backgroundColor = corCSS;
-  btn.style.backgroundColor = corCSS;
-  captacao.style.backgroundColor = corCSS;
+  nav.style.backgroundColor = corSelecionada;
+  footer.style.backgroundColor = corSelecionada;
+  txtIcones.style.backgroundColor = corSelecionada;
+  secao3.style.backgroundColor = ""; // Remove a cor de fundo da seção 3
+  colaboradores.style.backgroundColor = corSelecionada;
+  rodapeColaboradores.style.backgroundColor = corSelecionada;
+  header.style.backgroundColor = corSelecionada;
+  btn.style.backgroundColor = corSelecionada;
+  captacao.style.backgroundColor = corSelecionada;
 
 
 // Aqui fazemos uma espécie de for pra aplicar uma ação x pra todos os elementos 
   cards.forEach(function(card){
-    card.style.backgroundColor = corCSS;
+    card.style.backgroundColor = corSelecionada;
   });
 
   paragrafosSecao3.forEach(function(p){
-    p.style.backgroundColor = corCSS;
+    p.style.backgroundColor = corSelecionada;
   });
 });
