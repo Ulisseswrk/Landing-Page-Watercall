@@ -203,15 +203,15 @@ h1:hover{
     cursor: pointer;
 }
 
-.option-preto, .option-preto:hover{
-    background-color: rgb(255, 0, 0);
+.option-preto{
+    background-color: rgb(0, 0, 0);
 }
 
-.option-branco, .option-branco:hover{
-    background-color: var(--cor-texto);
+.option-vermelho{
+    background-color: rgb(255, 3, 3);
 }
 
-.option-azul, .option-azul:hover{
+.option-azul{
     background-color: rgb(34, 0, 255);
 }
 
