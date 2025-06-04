@@ -38,3 +38,15 @@ seletor.addEventListener("change", function() {
     p.style.backgroundColor = corSelecionada;
   });
 });
+
+// --------------------------------------------------------------------------------
+
+const imagens = ["src/img/carousel/foto1.png", "src/img/carousel/foto2.png", "src/img/carousel/foto3.png"];
+  let index = 0;
+
+  function trocarImagem() {
+    index = (index + 1) % imagens.length;
+    document.getElementById("carousel-img").src = imagens[index];
+  }
+
+  setInterval(trocarImagem, 4000); // troca a cada 4 segundos
