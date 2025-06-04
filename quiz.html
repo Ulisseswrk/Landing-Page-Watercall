@@ -3,10 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
-    <title>Quiz Watercall</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/quiz.css">
+    <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <img src="src/img/logos/ibm.png" alt="Logo IBM">
+        <img class = "barra" src="src/img/barra-vertical.png" alt="Barra vertical">
+        <img src="src/img/logos/inpe.png" alt="logo INPE">
+    </header>
+
+        <nav>
+            <a href="index.html"><img src="src/img/logos/logo.png" alt="Logo"></a>
+            <ul>
+                <li><a class="link-ancora" href="index.html#chamada-acao">Home</a></li>
+                <li><a class="link-ancora" href="index.html#txts-icones">Benefícios</a></li>
+                <li><a class="link-ancora" href="index.html#captacao">Solução</a></li>
+                <li><a class="link-ancora" href="index.html#secao3">Tecnologias</a></li>
+                <li><a class="link-ancora" href="index.html#colaboradores">Colaboradores</a></li>
+                <li><a class="link-ancora" href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+
+  <div class="quiz-container">
+    <h1>Quiz: Enchentes</h1>
+
+    <form id="quiz-formulario">
+      <div class="questao">
+        <h3>1. O que é uma enchente?</h3>
+        <label><input type="radio" name="q1" value="c"> Acúmulo de água em áreas urbanas ou rurais</label>
+        <label><input type="radio" name="q1" value="a"> Acúmulo de poeira no ar</label>
+        <label><input type="radio" name="q1" value="b"> Grande quantidade de vento</label>
+      </div>
+
+      <div class="questao">
+        <h3>2. Qual é uma das principais causas de enchentes em cidades?</h3>
+        <label><input type="radio" name="q2" value="c"> Impermeabilização do solo</label>
+        <label><input type="radio" name="q2" value="a"> Solo muito seco</label>
+        <label><input type="radio" name="q2" value="b"> Falta de construções</label>
+      </div>
+
+      <div class="questao">
+        <h3>3. O que ajuda a prevenir enchentes?</h3>
+        <label><input type="radio" name="q3" value="b"> Plantio de árvores</label>
+        <label><input type="radio" name="q3" value="a"> Desmatamento</label>
+        <label><input type="radio" name="q3" value="c"> Construção de prédios</label>
+      </div>
+
+      <div class="questao">
+        <h3>4. Qual estação do ano costuma ter mais enchentes?</h3>
+        <label><input type="radio" name="q4" value="a"> Verão</label>
+        <label><input type="radio" name="q4" value="b"> Outono</label>
+        <label><input type="radio" name="q4" value="c"> Inverno</label>
+      </div>
+
+      <div class="questao">
+        <h3>5. Qual atitude contribui para enchentes?</h3>
+        <label><input type="radio" name="q5" value="a"> Jogar lixo no chão</label>
+        <label><input type="radio" name="q5" value="b"> Reciclar</label>
+        <label><input type="radio" name="q5" value="c"> Plantar árvores</label>
+      </div>
+
+      <div class="questao">
+        <h3>6. As enchentes podem causar:</h3>
+        <label><input type="radio" name="q6" value="b"> Doenças e perdas materiais</label>
+        <label><input type="radio" name="q6" value="a"> Aumento do turismo</label>
+        <label><input type="radio" name="q6" value="c"> Economia de água</label>
+      </div>
+
+      <div class="questao">
+        <h3>7. Qual órgão é responsável por alertas de enchentes no Brasil?</h3>
+        <label><input type="radio" name="q7" value="a"> INPE</label>
+        <label><input type="radio" name="q7" value="b"> IBGE</label>
+        <label><input type="radio" name="q7" value="c"> DETRAN</label>
+      </div>
+
+      <div class="questao">
+        <h3>8. O que acontece quando os bueiros entopem?</h3>
+        <label><input type="radio" name="q8" value="b"> Pode causar alagamentos</label>
+        <label><input type="radio" name="q8" value="a"> A água escoa mais rápido</label>
+        <label><input type="radio" name="q8" value="c"> A cidade fica mais seca</label>
+      </div>
+
+      <div class="questao">
+        <h3>9. O que fazer em caso de enchente?</h3>
+        <label><input type="radio" name="q9" value="a"> Procurar lugares altos</label>
+        <label><input type="radio" name="q9" value="b"> Entrar na água para brincar</label>
+        <label><input type="radio" name="q9" value="c"> Ficar parado no local</label>
+      </div>
+
+      <div class="questao">
+        <h3>10. Como as mudanças climáticas afetam as enchentes?</h3>
+        <label><input type="radio" name="q10" value="b"> Aumentam a frequência e intensidade das chuvas</label>
+        <label><input type="radio" name="q10" value="a"> Diminuem as chuvas</label>
+        <label><input type="radio" name="q10" value="c"> Não afetam em nada</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Enviar</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+  <footer>
+        <div class="colunas-footer">
+            <a href=""><img src="src/img/logos/logo.png" alt="logo da empresa"></a>
+        </div>
+        <div class="colunas-footer">
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre nós</a></li>
+        </div>
+        <div class="colunas-footer">
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Acessibilidade</a></li>
+        </div>
+        <div class="colunas-footer">
+            <li><a href="#">Trabalhe conosco</a></li>
+            <li><a href="#">Ajuda</a></li>
+        </div>
+    </footer>
+
+  <script src="src/js/quiz.js"></script>
 </body>
 </html>
