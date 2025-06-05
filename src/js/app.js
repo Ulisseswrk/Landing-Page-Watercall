@@ -105,3 +105,13 @@ input.onkeypress = function(e) {
     btn.onclick();
   }
 };
+
+// --------------------------------------------------------------------------------
+
+const btnMenu = document.getElementById('btnMenu');
+const menu = document.getElementById('menu');
+
+btnMenu.addEventListener('click', function (e) {
+    e.preventDefault(); // Evita rolagem pra id
+    menu.classList.toggle('ativo');
+});

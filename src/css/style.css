@@ -21,6 +21,7 @@
 }
 
 html{
+    
     background-color: var(--cor-fundo-base);
     scroll-behavior: smooth;
 }
@@ -42,7 +43,6 @@ header img{
 }
 
 nav{
-    z-index: 2;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -55,6 +55,7 @@ nav{
 nav ul{
     list-style: none;
     display: flex;
+    gap: 20px;
     justify-content: space-around;
     width: 70rem;
 }
@@ -73,6 +74,11 @@ li a{
 
 li a:hover{
     color:var(--cor-texto-hover) ;
+}
+
+.menu-hamburguer{
+    width: 3.5rem;
+    display: none;
 }
 
 nav img{
@@ -167,12 +173,13 @@ h1{
     background-size: contain;
     height: 10rem;
     animation: scroll 30s linear infinite;
+    margin-bottom: -1rem;
 }
 
-.rodape-parceiros{
+/* .rodape-parceiros{
     height: 4rem;
     background-color: var(--cor-fundo1);
-}
+} */
 
 .container{
     display: flex;
@@ -280,7 +287,6 @@ h1:hover{
     height: 35rem;
     width: 100%;
     margin-top: 1rem;
-    margin-bottom: 1rem;
     scroll-margin-top: 8rem;
 }
 
@@ -351,17 +357,94 @@ footer a:hover{
     width: 6rem;
 }
 
-@media screen and (min-width: 1149px){
-    html{
+@media (max-width: 900px) {
+    html {
         width: 100%;
+        height: 100%;
+    }
+
+    .captacao{
+        height: 25rem;
+    }
+    .captacao h1{
+        font-size: 2.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+    }
+    .captacao input{
+        padding: 0.3rem;
+    }
+
+    .secao3 .paragrafo p{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 1250px) {
+    .menu-links {
+        width: 10rem;
+        right: 0rem;
+        top: 5.5rem;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        background-color: var(--cor-fundo1);
+        z-index: 1000;
+    }
+
+    .menu-links.ativo {
+        display: flex;
+    }
+
+    .menu-hamburguer {
+        display: block;
+        position: absolute;
+        top: 0.25rem;
+        right: 5rem;
+        z-index: 1100;
+    }
+}
+@keyframes pulso {
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
     }
 }
 
-@media screen and (min-width: 1061){
-    html{
-        width: 100%;
+@keyframes scroll {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100rem -100%;
     }
 }
+
+
+
 
 @keyframes pulso {
     0%{

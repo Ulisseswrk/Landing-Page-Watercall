@@ -14,7 +14,7 @@ const respostasCorretas = {
   q10: "b"
 };
 
-quizForm.addEventListener("submit", function (e) {
+quizForm.addEventListener("submit", function () {
   e.preventDefault();
 
   // Validação: verificar se todas as perguntas foram respondidas
