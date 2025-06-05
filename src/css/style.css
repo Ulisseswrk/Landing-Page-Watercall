@@ -5,7 +5,7 @@
     --cor-texto: rgb(255, 255, 255);
     --cor-texto-especial: #f1eeee;
     --cor-texto-hover: #979DA6;
-    --cor-fundo-base: #979DA6;
+    --cor-fundo-base: white;
     --cor-fundo1: #051326;
     --cor-div-icones: #061F40;
     --cor-chamativa: #0c1d8c;
@@ -319,6 +319,10 @@ h1:hover{
 
 #secao3{
     scroll-margin-top: 8rem;
+}
+
+#captacao{
+    scroll-margin-top: 11rem;
 }
 
 footer{
