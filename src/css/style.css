@@ -211,18 +211,6 @@ h1:hover{
     cursor: pointer;
 }
 
-.option-preto{
-    background-color: rgb(0, 0, 0);
-}
-
-.option-vermelho{
-    background-color: rgb(255, 3, 3);
-}
-
-.option-azul{
-    background-color: rgb(34, 0, 255);
-}
-
 .secao3{
     width: 100%;
     height: 37rem;
@@ -234,7 +222,7 @@ h1:hover{
 }
 
 .paragrafo{
-    background-color: var(--cor-div-tecnologias);
+    background-color: var(--cor-hover);
     color: var(--cor-texto);
     font-family: Poppins, sans-serif;
     font-size: 1.5rem;
@@ -247,7 +235,7 @@ h1:hover{
     display: flex;
     flex-direction: column;
     padding: 2.2rem;
-    transition: 1s;
+    transition: background-color 0.5s;
 }
 
 .secao3 .paragrafos{
