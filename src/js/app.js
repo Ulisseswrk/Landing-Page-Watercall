@@ -1,3 +1,18 @@
+// Código pra fazer o carousel funcionar
+
+const carouselImg = document.getElementById("carousel-img");
+const totalImagens = 3; // Quantidade de imagens
+let indiceAtual = 1;
+
+setInterval(() => {
+    indiceAtual++;
+    if (indiceAtual > totalImagens) {
+        indiceAtual = 1;
+    }
+    carouselImg.src = `src/img/carousel/foto${indiceAtual}.png`;
+}, 3000); // Troca a imagem a cada 3 segundos
+
+
 // Código pra mudar a cor do site
 var seletor = document.getElementById("escolheCor");
 
