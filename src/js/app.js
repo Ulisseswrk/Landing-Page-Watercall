@@ -10,7 +10,7 @@ setInterval(() => {
         indiceAtual = 1;
     }
     carouselImg.src = `src/img/carousel/foto${indiceAtual}.png`;
-}, 3000); // Troca a imagem a cada 3 segundos
+}, 2500); // Troca a imagem a cada 2.5 segundos
 
 
 // Código pra mudar a cor do site
